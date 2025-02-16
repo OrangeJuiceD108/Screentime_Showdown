@@ -11,6 +11,7 @@ offset_right = 960.0
 offset_bottom = 2142.0
 
 [node name="Background" type="TextureRect" parent="UI"]
+layout_mode = 0
 offset_right = 960.0
 offset_bottom = 2142.0
 texture = ExtResource("1_ed7k2")
