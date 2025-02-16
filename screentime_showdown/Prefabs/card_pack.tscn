@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://ds5go4rfidx8l"]
+[gd_scene load_steps=6 format=3 uid="uid://cvsf7nk8mwsym"]
 
 [ext_resource type="Texture2D" uid="uid://cvh2mlk4kpu4r" path="res://Textures/Pack-Body.png" id="1_6bmax"]
 [ext_resource type="Script" path="res://Prefabs/cardPack.gd" id="1_m5xry"]

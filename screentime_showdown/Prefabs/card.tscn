@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://doncp8713p5l0"]
+[gd_scene load_steps=7 format=3 uid="uid://doncp8713p5l0"]
 
 [ext_resource type="Script" path="res://Scripts/card.gd" id="1_mlvag"]
 [ext_resource type="Script" path="res://Scenes/card_image.gd" id="2_2umsp"]
-[ext_resource type="Resource" uid="uid://b1rahgb4iyn2x" path="res://Resources/my_nuts.tres" id="3_sluu7"]
+[ext_resource type="Resource" uid="uid://d25w6yljp66e1" path="res://Resources/cool_card.tres" id="3_087ry"]
+[ext_resource type="Script" path="res://Prefabs/area_2d.gd" id="3_wk8us"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_gt4b1"]
 size = Vector2(800, 1200)
@@ -16,7 +17,7 @@ script = ExtResource("1_mlvag")
 
 [node name="Card Image" type="Node2D" parent="."]
 script = ExtResource("2_2umsp")
-card_information = ExtResource("3_sluu7")
+card_information = ExtResource("3_087ry")
 
 [node name="Background" type="Sprite2D" parent="Card Image"]
 texture = SubResource("PlaceholderTexture2D_gt4b1")
@@ -29,6 +30,7 @@ offset_left = -400.0
 offset_top = 225.0
 offset_right = 400.0
 offset_bottom = 285.0
+mouse_filter = 2
 theme_override_font_sizes/bold_font_size = 40
 bbcode_enabled = true
 text = "[center] [b]default[/b] [/center]"
@@ -38,10 +40,12 @@ offset_left = -400.0
 offset_top = 290.0
 offset_right = 400.0
 offset_bottom = 529.0
+mouse_filter = 2
 bbcode_enabled = true
 text = "[center]default[/center]"
 
 [node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("3_wk8us")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_wcke2")

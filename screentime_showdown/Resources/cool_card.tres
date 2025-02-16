@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Card_Information" load_steps=3 format=3 uid="uid://d25w6yljp66e1"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/card_information.gd" id="1_cidrg"]
+[ext_resource type="Texture2D" uid="uid://dn3ld6vja8hko" path="res://Textures/cool_background.png" id="1_f16s5"]
+
+[resource]
+script = ExtResource("1_cidrg")
+card_name = "EPIC GAMER"
+description = "GAMERGAMERGAMER"
+art = ExtResource("1_f16s5")
+rarity = 0
