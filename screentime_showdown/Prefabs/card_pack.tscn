@@ -1,13 +1,13 @@
 [gd_scene load_steps=6 format=3 uid="uid://ds5go4rfidx8l"]
 
+[ext_resource type="Script" path="res://Prefabs/inventory.gd" id="1_2vmat"]
 [ext_resource type="Texture2D" uid="uid://cvh2mlk4kpu4r" path="res://Textures/Pack-Body.png" id="1_6bmax"]
-[ext_resource type="Script" path="res://Prefabs/cardPack.gd" id="1_m5xry"]
 [ext_resource type="Texture2D" uid="uid://b8udyween78c3" path="res://Textures/Top-Riip.png" id="2_5spt1"]
 [ext_resource type="Texture2D" uid="uid://rtf6x8qg818w" path="res://Textures/Bottom-Rip.png" id="3_g06to"]
 [ext_resource type="Texture2D" uid="uid://bw6ay1xpp3kou" path="res://Textures/pixil-frame-0(1).png" id="4_r50q5"]
 
 [node name="Card Pack" type="Node2D"]
-script = ExtResource("1_m5xry")
+script = ExtResource("1_2vmat")
 
 [node name="Pack Textures" type="Node2D" parent="."]
 
