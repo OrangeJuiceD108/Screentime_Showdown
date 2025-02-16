@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://56qdub3t7rjj"]
+
+[ext_resource type="PackedScene" uid="uid://cvsf7nk8mwsym" path="res://Prefabs/card_pack.tscn" id="1_j4mtk"]
+
+[node name="CardPackTest" type="Node2D"]
+
+[node name="Card Pack" parent="." instance=ExtResource("1_j4mtk")]
+position = Vector2(400, 800)

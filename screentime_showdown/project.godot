@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Screentime Showdown"
-run/main_scene="res://Scenes/card_template_test_scene.tscn"
+run/main_scene="res://Scenes/card_pack_test.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://Textures/icon.svg"
 

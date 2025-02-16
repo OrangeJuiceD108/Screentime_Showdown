@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cceyconubveap"]
 
 [ext_resource type="PackedScene" uid="uid://doncp8713p5l0" path="res://Prefabs/card.tscn" id="1_7gou4"]
-[ext_resource type="Script" path="res://Prefabs/cardPack.gd" id="2_3u0ta"]
+[ext_resource type="Script" path="res://Scripts/cardPack.gd" id="2_3u0ta"]
 
 [node name="Card Template Test Scene" type="Node2D"]
 

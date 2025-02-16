@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/card.gd" id="1_mlvag"]
 [ext_resource type="Script" path="res://Scenes/card_image.gd" id="2_2umsp"]
-[ext_resource type="Resource" uid="uid://d25w6yljp66e1" path="res://Resources/cool_card.tres" id="3_087ry"]
+[ext_resource type="Resource" path="res://Resources/cool_card.tres" id="3_087ry"]
 [ext_resource type="Script" path="res://Prefabs/area_2d.gd" id="3_wk8us"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_gt4b1"]
