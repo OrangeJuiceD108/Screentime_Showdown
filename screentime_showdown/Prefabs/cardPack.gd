@@ -1,9 +1,9 @@
 extends Node2D
 
-var CardList = ["res://Resources/my_nuts.tres", "common2", "common3", "uncommon1", "uncommon2", "rare1", "rare2"]
-var commons = ["common1", "common2", "common3"]
-var uncommons = ["uncommon1", "uncommon2"]
-var rares = ["rare1", "rare2"]
+@export var CardList = ["res://Resources/my_nuts.tres", "common2", "common3", "uncommon1", "uncommon2", "rare1", "rare2"]
+@export var commons = ["common1", "common2", "common3"]
+@export var uncommons = ["uncommon1", "uncommon2"]
+@export var rares = ["rare1", "rare2"]
 
 # pack_size: int
 # rarity_dist: Array [common_percent, uncommon_percent, rare_percent]
