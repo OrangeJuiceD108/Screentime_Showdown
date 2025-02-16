@@ -2,12 +2,13 @@
 
 [node name="OpenPacks" type="Node2D"]
 
-[node name="UI" type="Control" parent="."]
+[node name="Packs to Open UI" type="Control" parent="."]
 layout_mode = 3
+anchors_preset = 0
 offset_right = 960.0
 offset_bottom = 2142.0
 
-[node name="Open Pack Button" type="Button" parent="UI"]
+[node name="Open Pack Button" type="Button" parent="Packs to Open UI"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.05
@@ -17,7 +18,7 @@ anchor_bottom = 0.975
 offset_right = 8.0
 offset_bottom = 8.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="UI/Open Pack Button"]
+[node name="Open Pack Text" type="RichTextLabel" parent="Packs to Open UI/Open Pack Button"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -26,11 +27,11 @@ offset_left = -5.0
 offset_top = 11.75
 offset_right = -5.0
 offset_bottom = -18.45
-theme_override_font_sizes/bold_font_size = 140
+theme_override_font_sizes/bold_font_size = 139
 bbcode_enabled = true
 text = "[center][b]OPEN PACK[/b][/center]"
 
-[node name="Packs to Open Panel" type="Panel" parent="UI"]
+[node name="Packs to Open Panel" type="Panel" parent="Packs to Open UI"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.05
@@ -38,7 +39,7 @@ anchor_top = 0.025
 anchor_right = 0.95
 anchor_bottom = 0.225
 
-[node name="RichTextLabel" type="RichTextLabel" parent="UI/Packs to Open Panel"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Packs to Open UI/Packs to Open Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -47,10 +48,19 @@ theme_override_font_sizes/bold_font_size = 150
 bbcode_enabled = true
 text = "[center][b]PACKS TO OPEN:[/b][/center]"
 
-[node name="Number Panel" type="Panel" parent="UI"]
+[node name="Number Panel" type="Panel" parent="Packs to Open UI"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.175
 anchor_top = 0.25
 anchor_right = 0.825
 anchor_bottom = 0.5
+
+[node name="Number Text" type="RichTextLabel" parent="Packs to Open UI/Number Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_font_sizes/bold_font_size = 390
+bbcode_enabled = true
+text = "[center][b]##[/b][/center]"
