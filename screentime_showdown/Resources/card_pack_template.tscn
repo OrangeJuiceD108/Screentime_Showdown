@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1st2t8wer1g6"]
+
+[ext_resource type="Texture2D" uid="uid://cvh2mlk4kpu4r" path="res://Textures/Pack-Body.png" id="1_754tb"]
+[ext_resource type="Texture2D" uid="uid://b8udyween78c3" path="res://Textures/Top-Riip.png" id="2_pba06"]
+[ext_resource type="Texture2D" uid="uid://rtf6x8qg818w" path="res://Textures/Bottom-Rip.png" id="3_nkfi7"]
+[ext_resource type="Texture2D" uid="uid://bw6ay1xpp3kou" path="res://Textures/pixil-frame-0(1).png" id="4_egm08"]
+
+[node name="CardPackTemplate" type="Node2D"]
+
+[node name="Card Pack Image" type="Node2D" parent="."]
+
+[node name="Card Pack Body" type="Sprite2D" parent="Card Pack Image"]
+position = Vector2(0, 200)
+texture = ExtResource("1_754tb")
+
+[node name="Card Pack Rip Top" type="Sprite2D" parent="Card Pack Image"]
+position = Vector2(0, -500)
+texture = ExtResource("2_pba06")
+
+[node name="Card Pack Rip Bottom" type="Sprite2D" parent="Card Pack Image"]
+position = Vector2(0, -500)
+texture = ExtResource("3_nkfi7")
+
+[node name="Card Pack Cover" type="Sprite2D" parent="Card Pack Image"]
+texture = ExtResource("4_egm08")
