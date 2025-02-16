@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2retql7gibxi"]
+
+[ext_resource type="Texture2D" uid="uid://ce3d780bsxhxs" path="res://Textures/Background0.png" id="1_ed7k2"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 960.0
+offset_bottom = 2142.0
+
+[node name="Background" type="TextureRect" parent="UI"]
+offset_right = 960.0
+offset_bottom = 2142.0
+texture = ExtResource("1_ed7k2")
+
+[node name="Open Cards" type="Button" parent="UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.25
+anchor_right = 0.95
+anchor_bottom = 0.35
+offset_bottom = 8.0
+grow_horizontal = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/Open Cards"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 23.6
+offset_bottom = -25.6
+theme_override_font_sizes/bold_font_size = 125
+bbcode_enabled = true
+text = "[center][b]OPEN PACKS[/b][/center]"
+
+[node name="View Cards" type="Button" parent="UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.4
+anchor_right = 0.95
+anchor_bottom = 0.5
+offset_bottom = 8.0
+grow_horizontal = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/View Cards"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 23.6
+offset_bottom = -25.6
+theme_override_font_sizes/bold_font_size = 125
+bbcode_enabled = true
+text = "[center][b]VIEW CARDS[/b][/center]"
+
+[node name="Title" type="RichTextLabel" parent="UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.025
+anchor_right = 0.95
+anchor_bottom = 0.2
+theme_override_font_sizes/bold_font_size = 125
+bbcode_enabled = true
+text = "[center][b]SCREENTIME
+SHOWDOWN[/b][/center]"
