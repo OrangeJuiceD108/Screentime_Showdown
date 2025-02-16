@@ -11,5 +11,16 @@ config_version=5
 [application]
 
 config/name="Screentime Showdown"
+run/main_scene="res://Scenes/card_template_test_scene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://Textures/icon.svg"
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=2142
+window/handheld/orientation=1
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true

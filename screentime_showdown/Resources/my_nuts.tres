@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Card_Information" load_steps=3 format=3 uid="uid://b1rahgb4iyn2x"]
+
+[ext_resource type="Texture2D" uid="uid://bw6ay1xpp3kou" path="res://Textures/pixil-frame-0(1).png" id="1_0vvas"]
+[ext_resource type="Script" path="res://Scripts/Resources/card_information.gd" id="1_up8l8"]
+
+[resource]
+script = ExtResource("1_up8l8")
+card_name = "MY NUTS !!! ! !!!"
+description = "ITS MY NUTS
+NO WAY
+NO WAY
+NO WAY
+NO WAY
+NO WAY
+NO WAY"
+art = ExtResource("1_0vvas")

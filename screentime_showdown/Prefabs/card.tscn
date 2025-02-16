@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://doncp8713p5l0"]
+
+[ext_resource type="Script" path="res://Scripts/card.gd" id="1_mlvag"]
+[ext_resource type="Script" path="res://Scenes/card_image.gd" id="2_2umsp"]
+[ext_resource type="Resource" uid="uid://b1rahgb4iyn2x" path="res://Resources/my_nuts.tres" id="3_sluu7"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_gt4b1"]
+size = Vector2(800, 1200)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wcke2"]
+size = Vector2(800, 1200)
+
+[node name="Card" type="Node2D"]
+position = Vector2(400, 600)
+script = ExtResource("1_mlvag")
+
+[node name="Card Image" type="Node2D" parent="."]
+script = ExtResource("2_2umsp")
+card_information = ExtResource("3_sluu7")
+
+[node name="Background" type="Sprite2D" parent="Card Image"]
+texture = SubResource("PlaceholderTexture2D_gt4b1")
+
+[node name="Art" type="Sprite2D" parent="Card Image"]
+position = Vector2(0, -200)
+
+[node name="Name" type="RichTextLabel" parent="Card Image"]
+offset_left = -400.0
+offset_top = 225.0
+offset_right = 400.0
+offset_bottom = 285.0
+theme_override_font_sizes/bold_font_size = 40
+bbcode_enabled = true
+text = "[center] [b]default[/b] [/center]"
+
+[node name="Description" type="RichTextLabel" parent="Card Image"]
+offset_left = -400.0
+offset_top = 290.0
+offset_right = 400.0
+offset_bottom = 529.0
+bbcode_enabled = true
+text = "[center]default[/center]"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_wcke2")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
